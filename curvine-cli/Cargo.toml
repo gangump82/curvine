@@ -6,9 +6,15 @@ license.workspace = true
 
 [dependencies]
 orpc = { workspace = true }
-curvine-common = { workspace = true }
-curvine-client = { workspace = true }
+curvine-client-core = { workspace = true }
+curvine-job-client = { workspace = true }
+curvine-unified-fs = { workspace = true }
+curvine-bench = { workspace = true }
 curvine-ufs = { workspace = true }
+curvine-config = { workspace = true }
+curvine-error = { workspace = true }
+curvine-fs-api = { workspace = true }
+curvine-model = { workspace = true }
 clap = { workspace = true }
 tokio = { workspace = true }
 serde = { workspace = true }

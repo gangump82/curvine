@@ -31,8 +31,9 @@ oss-hdfs = ["curvine-client/oss-hdfs"]
 
 [dependencies]
 orpc = { workspace = true }
-curvine-client = { workspace = true }
+curvine-client = { workspace = true, features = ["job-client", "unified"] }
 curvine-common = { workspace = true }
+curvine-config = { workspace = true }
 once_cell = { workspace = true }
 tracing = { workspace = true }
 tracing-appender = { workspace = true }
