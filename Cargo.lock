@@ -2191,6 +2191,16 @@ dependencies = [
 [[package]]
 name = "curvine-io"
 version = "0.2.0"
+dependencies = [
+ "bytes",
+ "curvine-sys",
+ "orpc-error",
+ "orpc-runtime",
+ "serde",
+ "thiserror 1.0.69",
+ "tokio",
+ "toml",
+]
 
 [[package]]
 name = "curvine-job-client"
@@ -6340,6 +6350,7 @@ dependencies = [
  "chrono",
  "crc32fast",
  "crossbeam",
+ "curvine-io",
  "curvine-sys",
  "dashmap 5.5.3",
  "fs2",
@@ -6355,6 +6366,7 @@ dependencies = [
  "num_enum",
  "once_cell",
  "orpc-error",
+ "orpc-net",
  "orpc-runtime",
  "parking_lot",
  "pin-project-lite",
@@ -6389,6 +6401,14 @@ dependencies = [
 [[package]]
 name = "orpc-net"
 version = "0.2.0"
+dependencies = [
+ "curvine-io",
+ "orpc-error",
+ "orpc-runtime",
+ "serde",
+ "sysinfo",
+ "tokio",
+]
 
 [[package]]
 name = "orpc-rpc"
