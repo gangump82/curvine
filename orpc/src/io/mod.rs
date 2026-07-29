@@ -17,6 +17,17 @@ pub use curvine_io::{
     NvmeTarget, ReadAheadTask, SpdkConf,
 };
 
+// `io_error` and `block_io` were public module paths before the `curvine-io`
+// extraction, so they stay reachable here even though `curvine-io` only
+// re-exports the items.
+pub mod io_error {
+    pub use curvine_io::IOError;
+}
+
+pub mod block_io {
+    pub use curvine_io::{BlockDevice, BlockIO};
+}
+
 pub mod spdk_conf {
     pub use curvine_io::{BdevInfo, NvmeTarget, SpdkConf};
 }
